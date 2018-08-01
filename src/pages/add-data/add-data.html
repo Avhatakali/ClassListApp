@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ADD CLASS LIST</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="wrap">
+  <h2>Add Student Details</h2>
+  <form (ngSubmit)="saveData()">
+
+    <ion-item>
+      <ion-label class="label" floating>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="data.name" name="name" required=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Surname</ion-label>
+        <ion-input type="text" [(ngModel)]="data.surname" name="surname" required=""></ion-input>
+    </ion-item>    
+
+    <ion-item>
+        <ion-label floating>Identity</ion-label>
+        <ion-input type="number" [(ngModel)]="data.identity" name="identity" required="" ></ion-input>
+   </ion-item>    
+
+    <ion-item>
+      <ion-label floating>Gender</ion-label>
+      <ion-select [(ngModel)]="data.gender" name="gender" required="">
+        <ion-option value="Male">Male</ion-option>
+        <ion-option value="Female">Female</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="text"  [(ngModel)]="data.email" name="email" required="" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input type="text"  [(ngModel)]="data.address" name="address" required="" ></ion-input>
+      </ion-item>
+
+    <button ion-button type="submit" block>Save</button>
+  </form>
+</ion-content>
