@@ -12,33 +12,21 @@
 </ion-header>
 
 <ion-content padding>
-  <h2></h2>
   <ion-list>
-    <ion-item-sliding *ngFor="let class_list of expenses; let i=index">
-      <ion-item nopadding class="List_view">
-        <p>
-          <span>Name :{{class_list.name}}</span><br>
-          Surname : {{class_list.surname}}<br>
-         Identity : {{class_list.identity}}
-        </p>
+      <ion-item-sliding *ngFor="let class_list of expenses; let i=index">
+        <ion-item nopadding class="List_view">
+          <p>
+            <span>Name :{{class_list.name}}</span><br>
+            Surname : {{class_list.surname}}<br>
+            Identity : {{class_list.identity}}
+          </p>
 
-        <h3 item-end>
-            <button ion-button color="primary" (click)="editData(class_list.rowid)">
-                <ion-icon></ion-icon>
-             more </button>
-        </h3>
-      </ion-item>
-
-      <ion-item-options side="right">
-        
-       
-      </ion-item-options>
-    </ion-item-sliding>
+          <h3 item-end>
+              <button ion-button color="primary" (click)="editData(class_list.rowid)">
+                  <ion-icon></ion-icon>
+              more </button>
+          </h3>
+        </ion-item>
+      </ion-item-sliding>
   </ion-list>
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    
-  </ion-toolbar>
-</ion-footer>

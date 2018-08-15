@@ -8,12 +8,10 @@ import { ClassHomePage } from '../class-home/class-home';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) { }
 
+  start(){
+    this.navCtrl.setRoot(ClassHomePage);
   }
-
-start(){
-  this.navCtrl.setRoot(ClassHomePage);
-}
 
 }

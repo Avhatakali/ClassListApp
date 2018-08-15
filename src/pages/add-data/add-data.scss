@@ -1,10 +1,12 @@
 page-add-data {
 
     .wrap{
-       
+       align-items: center;
+       text-align: center;
     }
 
-    .label{
-        color: greenyellow;
+    .icons{
+        margin-bottom: -10px;
+        background: gray; 
     }
 }

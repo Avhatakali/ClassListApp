@@ -7,25 +7,28 @@
 </ion-header>
 
 <ion-content padding class="wrap">
-  
   <form (ngSubmit)="saveData()">
 
     <ion-item>
-      <ion-label class="label" floating>Name</ion-label>
-      <ion-input type="text" [(ngModel)]="data.name" name="name" required=""></ion-input>
+        <ion-icon item-start class="icon" name="contact"></ion-icon>
+        <ion-label class="label" >Name</ion-label>
+        <ion-input type="text" [(ngModel)]="data.name" name="name" required=""></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label floating>Surname</ion-label>
+        <ion-icon item-start name="contact"></ion-icon>
+        <ion-label >Surname</ion-label>
         <ion-input type="text" [(ngModel)]="data.surname" name="surname" required=""></ion-input>
     </ion-item>    
 
     <ion-item>
+        <ion-icon item-start name="calendar"></ion-icon>
         <ion-label floating>Identity</ion-label>
         <ion-input type="number" [(ngModel)]="data.identity" name="identity" required="" ></ion-input>
    </ion-item>    
 
     <ion-item>
+        <ion-icon item-start name="person"></ion-icon>
       <ion-label floating>Gender</ion-label>
       <ion-select [(ngModel)]="data.gender" name="gender" required="">
         <ion-option value="Male">Male</ion-option>
@@ -34,11 +37,13 @@
     </ion-item>
 
     <ion-item>
+        <ion-icon item-start name="mail"></ion-icon>
       <ion-label floating>Email</ion-label>
       <ion-input type="text"  [(ngModel)]="data.email" name="email" required="" ></ion-input>
     </ion-item>
 
     <ion-item>
+        <ion-icon item-start name="pin"></ion-icon>
         <ion-label floating>Address</ion-label>
         <ion-input type="text"  [(ngModel)]="data.address" name="address" required="" ></ion-input>
       </ion-item>
