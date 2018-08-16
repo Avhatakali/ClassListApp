@@ -41,8 +41,8 @@ export class EditDataPage {
             this.data.email = res.rows.item(0).email;
             this.data.address = res.rows.item(0).address;
          }
-
         })
+        
         .catch(e => {
           console.log(e);
           this.toast.show(e, '5000', 'center').subscribe(
